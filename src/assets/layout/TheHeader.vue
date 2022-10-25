@@ -9,7 +9,7 @@
           <RouterLink to="/tutores">Todos os tutores</RouterLink>
         </li>
         <li>
-          <router-link to="/solicitacoes">Solicitações</router-link>
+          <router-link to="/solicitacao">Solicitações</router-link>
         </li>
 
       </ul>
