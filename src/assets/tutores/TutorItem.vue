@@ -3,11 +3,13 @@
     <h3>{{ fullName }}</h3>
     <h4>R${{ horaAula }}/hora</h4>
     <div>
-      <h4>{{ areas }}</h4>
+      <base-badge>{{ areas }}</base-badge>
     </div>
     <div class="action">
-      <RouterLink :to="tutorLinkContato">Contato</RouterLink>
-      <RouterLink :to="tutorDetalheLink">Detalhes</RouterLink>
+      <base-button mode="outline" link :to="tutorLinkContato"
+        >Contato</base-button
+      >
+      <base-button link :to="tutorDetalheLink">Detalhes</base-button>
     </div>
   </li>
 </template>
@@ -34,6 +36,7 @@ li {
   border: 1px solid #424242;
   border-radius: 12px;
   padding: 1rem;
+  list-style: none;
 }
 
 h3 {

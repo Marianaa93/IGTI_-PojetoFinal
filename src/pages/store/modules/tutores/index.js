@@ -11,7 +11,7 @@ export default {
           id: "c1",
           nome: "Mariana",
           sobrenome: "Lima",
-          areas: "inglês",
+          areas: "Frontend",
           descricao:
             " Sou formada em engenharia ambiental e dou aulas desde 2011",
           horaAula: 30,
@@ -21,8 +21,17 @@ export default {
           id: "c2",
           nome: "Carla",
           sobrenome: "Valdivia",
-          areas: "matemática",
+          areas: "Espanhol",
           descricao: " Sou formada em Marketing e sou Chilena",
+          horaAula: 40,
+        },
+
+        {
+          id: "c3",
+          nome: "Paula",
+          sobrenome: "Rodrigues",
+          areas: "Matemática",
+          descricao: " Sou formada em Matemática",
           horaAula: 40,
         },
       ],
