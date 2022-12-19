@@ -2,7 +2,7 @@
   <section>
     <base-card>
       <h2>Registrar como Tutor</h2>
-      <TutorForm></TutorForm
+      <TutorForm @save-data="saveData"></TutorForm
     ></base-card>
   </section>
 </template>
@@ -11,6 +11,13 @@ import TutorForm from "../../assets/tutores/TutorForm.vue";
 export default {
   components: {
     TutorForm,
+  },
+
+  methods: {
+    saveData(data) {
+      this.$store.dispatch("tutores/registroTutor", data);
+      this.$router.replace("/tutores");
+    },
   },
 };
 </script>

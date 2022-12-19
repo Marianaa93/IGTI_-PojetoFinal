@@ -5,7 +5,7 @@
   <section>
     <base-card>
       <div class="controls">
-        <base-button mode="outline">Refresh</base-button>
+        <base-button v-if="!isTutor" mode="outline">Refresh</base-button>
 
         <base-button link to="/registrar">Registrar como tutor</base-button>
       </div>
@@ -43,6 +43,10 @@ export default {
     };
   },
   computed: {
+    isTutor() {
+      return this.$store.getters["tutores/isTutor"];
+    },
+
     filteredTutores() {
       const tutores = this.$store.getters["tutores/tutores"];
       return tutores.filter((tutor) => {
